@@ -16,8 +16,8 @@ function changeCoolor() {
 
 
 
-let minutes_work = 1
-let minutes_break = 25
+let minutes_work = 25
+let minutes_break = 5
 
 
 let cycles = 8
