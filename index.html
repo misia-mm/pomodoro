@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <p class="TimerClockClass" id="TimerClock" ></p>
+      
+       
+       <svg height="42px" width="440px"  class="center">
+      
+      <defs>
+        <linearGradient id="grad1" >
+          <stop offset="0%" stop-color=#ccf2ff />
+          <stop offset="20%" stop-color=#b3ffff />
+          <stop offset="45%" stop-color=#99ccff />
+          <stop offset="100%" stop-color=#454891 />
+        </linearGradient>
+        <linearGradient id="grad_opa" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="40%" style="stop-color:white;stop-opacity:0" />
+        <stop offset="100%" style="stop-color:white;stop-opacity:0.7" />
+        </linearGradient>
+    
+      </defs>
+      
+      <mask id="svgmask1" >
+      <rect width=364 height="25" x="38" y="10" rx="1" ry="1" fill="white" id="maskRect"/>
+      </mask>
+  
+      <rect id="timerrect" width="364" height="25" x="38" y="10" rx="1" ry="1" fill="url(#grad1)" mask= "url(#svgmask1)" />
+      <rect width="364" height="12.5" x="38" y="10" rx="1" ry="1" fill="url(#grad_opa)" mask= "url(#svgmask1)"/>
+       <polyline points="35,6 405,6 425,22 405,39 35,39 15,22 35,6 36,6" style="stroke: lightgray;stroke-width:2.5;fill:none" />
+      
+      <polyline points="413,9 415,7 434,22 415,38 413,36" style="stroke: lightgray;stroke-width:2.5;fill:none" />
+      <polyline points="27,9 25,7 6,22 25,38 27,36" style="stroke: lightgray;stroke-width:2.5;fill:none" />
+      
+      <polyline points="31,13 34,16 34,29 31,32 " style="stroke: lightgray;stroke-width:2.5;fill:none" />
+      <polyline points="409,13 407,16 407,29 409,32 " style="stroke: lightgray;stroke-width:2.5;fill:none" />
+     
+      </svg>
+      
+      <style>
+  .video-wrapper {
+    width: 90vw;  
+    height: 90vh-40;        
+    margin: 0 auto;      
+  }
+
+  .video-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    aspect-ratio: 16 / 9;
+  }
+</style>
+
+<div class="video-wrapper">
+  <iframe width="1120" height="630" src="https://www.youtube.com/embed/Y4KX-owEk98?si=3QA2KroGg3Ra6azB?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+  </iframe>
+</div>
+      
+<script src="script.js"></script>
+  </body>
+</html>
