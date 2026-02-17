@@ -53,7 +53,7 @@ function TrackTime() {
   if (seconds<0){ minutes = minutes - 1; seconds = 59 ;}
   if (minutes < 0){ 
     if (working==1) { working = 0; minutes = minutes_break; seconds=0; var audio = new Audio('Skyrim_Level-Up-Sound.mp3');audio.play();}
-    else { working = 1; minutes = minutes_work; seconds=seconds_work; cycles=cycles-1;}
+    else { working = 1; minutes = minutes_work; seconds=0; cycles=cycles-1;}
                   }
                   
                  }
